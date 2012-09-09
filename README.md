@@ -1,0 +1,21 @@
+![screenshot](my-multiple-keyboards/raw/master/screenshot.png)
+
+Do you have more than one keyboard attached to your Mac? Are you crazy
+enough to use both simultaneously?  Or maybe you just own an assistive
+device (say a foot pedal) that pretends to be another keyboard.  Anyway
+there is one gotcha — on Mac each keyboard respects its own modifier
+keys and ignores modifiers pressed on other keyboards.  This little
+utility solves the issue in a user-friendly way.
+
+Specifically System Preferences are extended with ‘My Multiple
+Keyboards’ custom preference pane enabling to customize the processing
+of modifier keys.  It is just that simple — run the installer; change
+the settings the way you like it.  Settings are per-user and modifier
+keys customization is turned off by default.
+
+#### Known Issues:
+* My Multiple Keyboards will be inoperative immediately after
+  installation; log out and log back in to fix
+
+This work is actually the complete rewrite of the very similar alterkeys utility by [Chance Miller](http://dotdotcomorg.net/Mac/). Mine has fewer bugs in it.
+
