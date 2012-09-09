@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D202CEA0486D31800D8A456 /* MyMultipleKeyboards_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* MyMultipleKeyboards_Prefix.pch */; };
+		8D202CEB0486D31800D8A456 /* MyMultipleKeyboardsPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* MyMultipleKeyboardsPref.h */; };
+		8D202CEE0486D31800D8A456 /* MyMultipleKeyboardsPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F506C040013D9D8001CA16C8 /* MyMultipleKeyboardsPref.tiff */; };
+		8D202CEF0486D31800D8A456 /* MyMultipleKeyboardsPref.xib in Resources */ = {isa = PBXBuildFile; fileRef = F506C042013D9D8C01CA16C8 /* MyMultipleKeyboardsPref.xib */; };
+		8D202CF10486D31800D8A456 /* MyMultipleKeyboardsPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F506C03D013D9D7901CA16C8 /* MyMultipleKeyboardsPref.m */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+		909E54E715FA8D9F00BC5737 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 909E54E615FA8D9F00BC5737 /* InfoPlist.strings */; };
+		909E563415FB755C00BC5737 /* mmk-daemon.defs in Sources */ = {isa = PBXBuildFile; fileRef = 909E563315FB751500BC5737 /* mmk-daemon.defs */; };
+		909E568415FB8FEE00BC5737 /* mmk-daemon.defs in Sources */ = {isa = PBXBuildFile; fileRef = 909E563315FB751500BC5737 /* mmk-daemon.defs */; settings = {ATTRIBUTES = (Server, ); }; };
+		909E568D15FB902B00BC5737 /* mmkd-main.c in Sources */ = {isa = PBXBuildFile; fileRef = 909E568C15FB902B00BC5737 /* mmkd-main.c */; };
+		909E595F15FBB1D300BC5737 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909E595E15FBB1D300BC5737 /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* MyMultipleKeyboards_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMultipleKeyboards_Prefix.pch; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* MyMultipleKeyboards.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMultipleKeyboards.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		90005FB115FBF7D40097FC5D /* org.example.myMultipleKeyboards.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = org.example.myMultipleKeyboards.plist; sourceTree = "<group>"; };
+		909E563315FB751500BC5737 /* mmk-daemon.defs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.mig; path = "mmk-daemon.defs"; sourceTree = "<group>"; };
+		909E567F15FB8F9400BC5737 /* mmk-agent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mmk-agent"; sourceTree = BUILT_PRODUCTS_DIR; };
+		909E568C15FB902B00BC5737 /* mmkd-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "mmkd-main.c"; sourceTree = "<group>"; };
+		909E595E15FBB1D300BC5737 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		909E59CF15FBD17C00BC5737 /* org.example.mmk-agent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "org.example.mmk-agent.plist"; sourceTree = "<group>"; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F506C03C013D9D7901CA16C8 /* MyMultipleKeyboardsPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMultipleKeyboardsPref.h; sourceTree = "<group>"; };
+		F506C03D013D9D7901CA16C8 /* MyMultipleKeyboardsPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMultipleKeyboardsPref.m; sourceTree = "<group>"; };
+		F506C040013D9D8001CA16C8 /* MyMultipleKeyboardsPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MyMultipleKeyboardsPref.tiff; sourceTree = "<group>"; };
+		F506C043013D9D8C01CA16C8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyMultipleKeyboardsPref.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909E567D15FB8F9400BC5737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909E595F15FBB1D300BC5737 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MyMultipleKeyboards */ = {
+			isa = PBXGroup;
+			children = (
+				909E595E15FBB1D300BC5737 /* ApplicationServices.framework */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				909E563315FB751500BC5737 /* mmk-daemon.defs */,
+				909E568C15FB902B00BC5737 /* mmkd-main.c */,
+				909E59CF15FBD17C00BC5737 /* org.example.mmk-agent.plist */,
+				90005FB115FBF7D40097FC5D /* org.example.myMultipleKeyboards.plist */,
+			);
+			name = MyMultipleKeyboards;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				909E54E615FA8D9F00BC5737 /* InfoPlist.strings */,
+				F506C040013D9D8001CA16C8 /* MyMultipleKeyboardsPref.tiff */,
+				F506C042013D9D8C01CA16C8 /* MyMultipleKeyboardsPref.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F506C03C013D9D7901CA16C8 /* MyMultipleKeyboardsPref.h */,
+				F506C03D013D9D7901CA16C8 /* MyMultipleKeyboardsPref.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* MyMultipleKeyboards.prefPane */,
+				909E567F15FB8F9400BC5737 /* mmk-agent */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCFA20370C41700C91783 /* MyMultipleKeyboards_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* MyMultipleKeyboards_Prefix.pch in Headers */,
+				8D202CEB0486D31800D8A456 /* MyMultipleKeyboardsPref.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D202CE80486D31800D8A456 /* MyMultipleKeyboards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "MyMultipleKeyboards" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMultipleKeyboards;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = MyMultipleKeyboards;
+			productReference = 8D202CF80486D31800D8A456 /* MyMultipleKeyboards.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		909E567E15FB8F9400BC5737 /* mmk-agent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 909E568315FB8FD300BC5737 /* Build configuration list for PBXNativeTarget "mmk-agent" */;
+			buildPhases = (
+				909E567C15FB8F9400BC5737 /* Sources */,
+				909E567D15FB8F9400BC5737 /* Frameworks */,
+				90005F9C15FBF59E0097FC5D /* Install launchd.plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mmk-agent";
+			productName = "mmk-daemon";
+			productReference = 909E567F15FB8F9400BC5737 /* mmk-agent */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "MyMultipleKeyboards" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ddd,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* MyMultipleKeyboards */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* MyMultipleKeyboards */,
+				909E567E15FB8F9400BC5737 /* mmk-agent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909E54E715FA8D9F00BC5737 /* InfoPlist.strings in Resources */,
+				8D202CEE0486D31800D8A456 /* MyMultipleKeyboardsPref.tiff in Resources */,
+				8D202CEF0486D31800D8A456 /* MyMultipleKeyboardsPref.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90005F9C15FBF59E0097FC5D /* Install launchd.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Install launchd.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "install -d \"${DSTROOT}/Library/LaunchAgents\" && install \"${SRCROOT}/org.example.mmk-agent.plist\" \"${DSTROOT}/Library/LaunchAgents\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909E563415FB755C00BC5737 /* mmk-daemon.defs in Sources */,
+				8D202CF10486D31800D8A456 /* MyMultipleKeyboardsPref.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909E567C15FB8F9400BC5737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909E568415FB8FEE00BC5737 /* mmk-daemon.defs in Sources */,
+				909E568D15FB902B00BC5737 /* mmkd-main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		909E54E615FA8D9F00BC5737 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F506C042013D9D8C01CA16C8 /* MyMultipleKeyboardsPref.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F506C043013D9D8C01CA16C8 /* English */,
+			);
+			name = MyMultipleKeyboardsPref.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD214908BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyMultipleKeyboards_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/PreferencePanes;
+				PRODUCT_NAME = MyMultipleKeyboards;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DBD214A08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyMultipleKeyboards_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/PreferencePanes;
+				PRODUCT_NAME = MyMultipleKeyboards;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DBD214D08BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Debug;
+		};
+		1DBD214E08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Release;
+		};
+		909E568115FB8F9500BC5737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_GROUP = wheel;
+				INSTALL_MODE_FLAG = "u+ws,go-w,a+rX";
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /usr/sbin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "mmk-agent";
+			};
+			name = Debug;
+		};
+		909E568215FB8F9500BC5737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_GROUP = wheel;
+				INSTALL_MODE_FLAG = "u+ws,go-w,a+rX";
+				INSTALL_OWNER = root;
+				INSTALL_PATH = /usr/sbin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "mmk-agent";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "MyMultipleKeyboards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214908BA80EA00186707 /* Debug */,
+				1DBD214A08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "MyMultipleKeyboards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214D08BA80EA00186707 /* Debug */,
+				1DBD214E08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		909E568315FB8FD300BC5737 /* Build configuration list for PBXNativeTarget "mmk-agent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				909E568115FB8F9500BC5737 /* Debug */,
+				909E568215FB8F9500BC5737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

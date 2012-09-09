@@ -1,0 +1,20 @@
+subsystem mmk_daemon 500;
+userprefix mmkd_;
+serverprefix mmkd_;
+
+#include <mach/std_types.defs>
+#include <mach/mach_types.defs>
+
+/*
+ * Retreives the current value of 'merge modifier keys mode' option.
+ * The returned mode is either 0 (disabled) or 1 (enabled).
+ */
+routine get_mod_keys_merge_mode(server_port : mach_port_t;
+                                out mode : int);
+
+/*
+ * Updates the value of 'merge modifier keys mode' option.
+ * Valid values are 0 (disabled) or 1 (enabled).
+ */
+routine set_mod_keys_merge_mode(server_port : mach_port_t;
+                                in mode : int);
