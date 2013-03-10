@@ -1,4 +1,4 @@
-![screenshot](my-multiple-keyboards/raw/master/screenshot.png)
+![screenshot](https://github.com/mejedi/my-multiple-keyboards/raw/master/screenshot.png)
 
 Do you have more than one keyboard attached to your Mac? Are you crazy
 enough to use both simultaneously?  Or maybe you just own an assistive
