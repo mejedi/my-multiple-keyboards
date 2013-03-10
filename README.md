@@ -13,9 +13,9 @@ of modifier keys.  It is just that simple — run the installer; change
 the settings the way you like it.  Settings are per-user and modifier
 keys customization is turned off by default.
 
-#### Known Issues:
-* My Multiple Keyboards will be inoperative immediately after
-  installation; log out and log back in to fix
+#### Install
+Running *build.sh* will produce the installer package (MyMultipleKeyboars.pkg).
+This obviously requires XCode.
 
 This work is actually the complete rewrite of the very similar alterkeys utility by [Chance Miller](http://dotdotcomorg.net/Mac/). Mine has fewer bugs in it.
 

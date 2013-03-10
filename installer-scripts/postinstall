@@ -1,0 +1,7 @@
+#! /bin/bash
+if [ -n "$USER" -a "$USER" != "$(whoami)" ]; then
+    su "$USER" -c "launchctl load /Library/LaunchAgents/org.example.mmk-agent.plist"
+else
+    launchctl load /Library/LaunchAgents/org.example.mmk-agent.plist
+fi
+
