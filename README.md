@@ -1,3 +1,10 @@
+# _Deprecation Warning_
+
+Please take a look at [KeyRemap4MacBook](https://pqrs.org/macosx/keyremap4macbook/). Its primary feature is key remapping; merging modifiers from different keyboards comes as a [side effect](https://pqrs.org/macosx/keyremap4macbook/document.html.en#implicit).
+
+#### My Multiple Keyboards
+
+
 ![screenshot](https://github.com/mejedi/my-multiple-keyboards/raw/master/screenshot.png)
 
 Do you have more than one keyboard attached to your Mac? Are you crazy
